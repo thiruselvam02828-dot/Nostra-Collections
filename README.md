@@ -75,7 +75,7 @@ Add your deployed website link here:
 
 ## 📌 GitHub Repository
 
-**Repository:** YOUR_GITHUB_REPOSITORY_LINK
+**Repository:** https://github.com/thiruselvam02828-dot/Nostra-Collections.git
 
 ## 👨‍💻 Author
 
