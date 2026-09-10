@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Notification Bar with Clickable Close (X) -->
+    <div class="offer-bar">
+        <p>Sign up and GET 20% OFF for your first order. <span id="close-offer" style="cursor: pointer; font-weight: bold; margin-left: 10px;">X</span></p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Nostra</h1>
+        <div class="navbar-links">
+            <a href="index.html" class="active-link">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="navbar-icons">
+            <div class="wishlist-badge"><i class="fa-regular fa-heart"></i> <span id="wishlistCount">0</span></div>
+            <div class="navbar-menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Side Navbar (Mobile) -->
+    <div class="side-navbar" id="sideNavbar">
+        <p style="text-align: right; cursor: pointer;" id="closeNav">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Header / Hero Section -->
+    <div class="header">
+        <div>
+            <h2>Level up your style</h2>
+            <p>With our stunning collections</p>
+            <button class="header-button"><a href="collections.html" style="color:white; text-decoration:none;">Shop Now</a></button>
+        </div>
+        <div>
+            <img class="header-image" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=400" alt="Header Image">
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="service">
+        <div>
+            <i class="fa-solid fa-face-smile"></i>
+            <h4>Best Customer Experience</h4>
+            <p>We provide top-notch support to all our buyers.</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-shirt"></i>
+            <h4>Original Products</h4>
+            <p>100% authentic trending clothing line.</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-clock"></i>
+            <h4>Fast & Free Shipping</h4>
+            <p>Quick doorstep delivery across the country.</p>
+        </div>
+    </div>
+
+    <!-- Limited Offer Banner Section -->
+    <div class="limited-offer-banner">
+        <div class="offer-banner-container">
+            <div class="offer-banner-img">
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800" alt="New Season Arrival">
+            </div>
+            <div class="offer-banner-content">
+                <h2>New Season Arrival</h2>
+                <p>Spend $150 & Get Free Shipping Worldwide</p>
+                <button class="offer-btn">Shop Now &rarr;</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Nostra Club-->
+    <div class="newsletter">
+        <h2>Join the Nostra Club</h2>
+        <p>Enter your email to unlock special offers and stay updated on our latest drops</p>
+        <div class="newsletter-input-container">
+            <input type="text" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-container">
+            <h2>Nostra</h2>
+            <p>Nostra is a modern and stylish e-commerce destination designed to bring you the trendiest fashion collections and apparel with an ultra-responsive shopping experience.</p>
+            <div class="footer-icon-container">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <p>&copy; 2026 Nostra.com</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra - Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Notification Bar -->
+    <div class="offer-bar">
+        <p>Sign up and GET 20% OFF for your first order. <span id="close-offer" style="cursor: pointer; font-weight: bold; margin-left: 10px;">X</span></p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Nostra</h1>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html" class="active-link">Contact Us</a>
+        </div>
+        <div class="navbar-icons">
+            <div class="wishlist-badge" style="display: none;"><i class="fa-regular fa-heart"></i> <span id="wishlistCount">0</span></div>
+            <div class="navbar-menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Side Navbar (Mobile) -->
+    <div class="side-navbar" id="sideNavbar">
+        <p style="text-align: right; cursor: pointer;" id="closeNav">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Creative Contact Section -->
+    <div class="contact-wrapper">
+        <div class="contact-card-box">
+            
+            <!-- Left Info Panel -->
+            <div class="contact-left">
+                <h2>Get in Touch</h2>
+                <p>We would love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                
+                <div class="info-row">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>123 Fashion Street, Chennai</span>
+                </div>
+                <div class="info-row">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>support@nostra.com</span>
+                </div>
+                <div class="info-row">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91 98765 43210</span>
+                </div>
+            </div>
+
+            <!-- Right Form Panel -->
+            <div class="contact-right">
+                <h2>Send Message</h2>
+                <form>
+                    <div class="input-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Message</label>
+                        <textarea rows="3" placeholder="Type your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="send-btn">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-container">
+            <h2>Nostra</h2>
+            <p>Nostra is a modern and stylish e-commerce destination designed to bring you the trendiest fashion collections and apparel with an ultra-responsive shopping experience.</p>
+            <div class="footer-icon-container">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <p>&copy; 2026 Nostra.com</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

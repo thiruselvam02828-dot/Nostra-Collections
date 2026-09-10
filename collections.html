@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra - Collections</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Notification Bar -->
+    <div class="offer-bar">
+        <p>Sign up and GET 20% OFF for your first order. <span id="close-offer" style="cursor: pointer; font-weight: bold; margin-left: 10px;">X</span></p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Nostra</h1>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="collections.html" class="active-link">Collections</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="navbar-icons">
+            <div class="wishlist-badge"><i class="fa-regular fa-heart"></i> <span id="wishlistCount">0</span></div>
+            <div class="navbar-menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Side Navbar (Mobile) -->
+    <div class="side-navbar" id="sideNavbar">
+        <p style="text-align: right; cursor: pointer;" id="closeNav">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Collections Container -->
+    <div class="collections-container">
+        
+        <!-- Sidebar Filters / Mobile Bottom Sheet Drawer -->
+        <div class="filter-section" id="filterSection">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                <h3>Filters</h3>
+                <i class="fa-solid fa-xmark" id="closeFilter" style="font-size: 20px; cursor: pointer; display: none;"></i>
+            </div>
+            
+            <div class="filter-box">
+                <h4>Occasion</h4>
+                <label><input type="checkbox" name="occasion" value="all" checked> All</label><br>
+                <label><input type="checkbox" name="occasion" value="summer"> Summer</label><br>
+                <label><input type="checkbox" name="occasion" value="winter"> Winter</label><br>
+                <label><input type="checkbox" name="occasion" value="kids"> Kids</label><br>
+                <label><input type="checkbox" name="occasion" value="rainy"> Rainy</label><br>
+                <label><input type="checkbox" name="occasion" value="party"> Party</label><br>
+                <label><input type="checkbox" name="occasion" value="beach"> Beach</label>
+            </div>
+
+            <div class="filter-box">
+                <h4>Colors</h4>
+                <label><input type="checkbox" name="color" value="all" checked> All Colors</label><br>
+                <label><input type="checkbox" name="color" value="white"> White</label><br>
+                <label><input type="checkbox" name="color" value="blue"> Blue</label><br>
+                <label><input type="checkbox" name="color" value="red"> Red</label>
+            </div>
+
+            <div class="filter-box">
+                <h4>Ideal For</h4>
+                <label><input type="checkbox" name="ideal" value="all" checked> Everyone</label><br>
+                <label><input type="checkbox" name="ideal" value="men"> Men</label><br>
+                <label><input type="checkbox" name="ideal" value="women"> Women</label><br>
+                <label><input type="checkbox" name="ideal" value="kids"> Kids</label>
+            </div>
+        </div>
+
+        <!-- Main Products Display Area -->
+        <div class="products-display">
+            <div class="collection-search">
+                <h2>Explore Our Collections</h2>
+                
+                <!-- Mobile Filter Button -->
+                <div class="mobile-filter-btn" id="mobileFilterBtn">
+                    <i class="fa-solid fa-filter"></i> Filters
+                </div>
+
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search products by name...">
+                    <i class="fa-solid fa-search"></i>
+                </div>
+            </div>
+
+            <div class="products" id="productsGrid">
+                <!-- Dynamically loaded -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-container">
+            <h2>Nostra</h2>
+            <p>Nostra is a modern and stylish e-commerce destination designed to bring you the trendiest fashion collections and apparel with an ultra-responsive shopping experience.</p>
+            <div class="footer-icon-container">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <p>&copy; 2026 Nostra.com</p>
+        </div>
+    </div>
+
+    <script src="product.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
